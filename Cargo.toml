@@ -1,0 +1,17 @@
+[package]
+name = "rustmart"
+version = "0.1.0"
+authors = ["Alex Kinnane <17098249+akinnane@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = "0.17"
+wasm-bindgen = "0.2"
+anyhow = "*"
+serde = { version = "1.0", features = ["derive"] }
+yew-router = "0.14.0"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
